@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect } from "react";
+import Hamburger from "hamburger-react";
+import React, { useEffect, useState } from "react";
 import {
   Link,
   Button,
@@ -10,6 +11,11 @@ import {
 } from "react-scroll";
 
 const Navbar = () => {
+  const [isActive, setActive] = useState(false);
+  const [isOpen, setOpen] = useState(false);
+  const handleToggle = () => {
+    setActive(!isActive);
+  };
   // useEffect is used to perform side effects in functional components.
   // Here, it's used to register scroll events and update scrollSpy when the component mounts.
   useEffect(() => {
@@ -55,10 +61,10 @@ const Navbar = () => {
     console.log(to);
   };
   return (
-    <div className="md:px-20 lg:px-40 pt-10 pb-5 text-poppins">
-      <nav className="flex justify-between text-text font-sora">
+    <div className="md:px-20 lg:px-40 pt-10 pb-5">
+      <nav className="hidden md:flex justify-between text-text font-sora">
         <div>
-          <p>my logo</p>
+          <p className="text-4xl pt-6">JK</p>
         </div>
         <div className="flex justify-center items-center">
           <ul className="flex gap-8 ">
@@ -114,9 +120,95 @@ const Navbar = () => {
                 Contact
               </Link>
             </li>
-            
           </ul>
-          <div><div className="ml-10 hover:transition bg-primary px-9 py-4 rounded-l-full rounded-r-full bg-gradient-to-r from-primary to-black hover:bg-gradient-to-r hover:from-black hover:to-primary hover:duration-1000 hover:ease-in-out">Hire me</div></div>
+          <div>
+            <div className="ml-10 hover:transition bg-primary px-9 py-4 rounded-l-full rounded-r-full bg-gradient-to-r from-primary to-black hover:bg-gradient-to-r hover:from-black hover:to-primary hover:duration-1000 hover:ease-in-out">
+              Hire me
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav className="flex md:hidden justify-between items-center text-text font-sora">
+        <div>
+          <p className="text-4xl md:pt-6">JK</p>
+        </div>
+        <div className="flex justify-center items-center">
+          <div>
+            <div className="ml-10 hover:transition bg-primary px-9 py-4 rounded-l-full rounded-r-full bg-gradient-to-r from-primary to-black hover:bg-gradient-to-r hover:from-black hover:to-primary hover:duration-1000 hover:ease-in-out">
+              Hire me
+            </div>
+          </div>
+          <div className="dropdown">
+            <div
+              onClick={handleToggle}
+              tabIndex={0}
+              role="button"
+              className="btn flex items-center justify-center btn-ghost lg:hidden"
+            >
+              <Hamburger
+                color="#8750F7"
+                size={25}
+                toggled={isOpen}
+                toggle={setOpen}
+              />
+            </div>
+            {isActive && (
+              <ul className="flex gap-8 menu dropdown-content z-[99999] mt-3 p-2 shadow w-screen bg-[#140C1C] text-text -left-[296px] text-[17px] top-[40px]">
+                <li className="hover:text-primary hover:transform hover:duration-1000 hover:ease-in-out hover:transition">
+                  <Link
+                    activeClass="active"
+                    to="skills"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                    onSetActive={handleSetActive}
+                  >
+                    Skills
+                  </Link>
+                </li>
+                <li className="text- hover:text-primary hover:transform hover:duration-1000 hover:ease-in-out hover:transition">
+                  <Link
+                    activeClass="active"
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                    onSetActive={handleSetActive}
+                  >
+                    Projects
+                  </Link>
+                </li>
+                <li className="hover:text-primary hover:transform hover:duration-1000 hover:ease-in-out hover:transition">
+                  <Link
+                    activeClass="active"
+                    to="education"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                    onSetActive={handleSetActive}
+                  >
+                    Education
+                  </Link>
+                </li>
+                <li className="hover:text-primary hover:transform hover:duration-1000 hover:ease-in-out hover:transition">
+                  <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                    onSetActive={handleSetActive}
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </div>
         </div>
       </nav>
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { FiArrowUp, FiArrowUpLeft, FiArrowUpRight, FiGithub } from "react-icons/fi";
+import { RiFirebaseLine, RiJavascriptLine, RiNodejsLine, RiReactjsLine, RiTailwindCssLine } from "react-icons/ri";
 
 const Projects = () => {
   return (
@@ -49,9 +50,21 @@ const Projects = () => {
               admins have the ability to assign different roles to users.
             </li>
           </ul>
+          <div className="card-actions">
+            <p className=" items-center flex mr-1 gap-0 md:gap-4 ">Skills used: 
+            <h2 className="text-primary border-2 h-10 w-10 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><RiReactjsLine className="text-4xl p-2"/></h2>
+            <h2 className="text-primary border-2 h-10 w-10 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><RiFirebaseLine className="text-4xl p-2"/></h2>
+            <h2 className="text-primary border-2 h-10 w-10 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><RiJavascriptLine className="text-4xl p-2"/></h2>
+            <h2 className="text-primary border-2 h-10 w-10 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><RiTailwindCssLine className="text-4xl p-2"/></h2>
+            <h2 className="text-primary border-2 h-10 w-10 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><RiNodejsLine className="text-4xl p-2"/></h2>
+
+            </p>
+          </div>
           <div className="card-actions items-center justify-end">
           <button className="px-9 py-2 border-2 hover:bg-primary hover:text-text hover:transition hover:duration-1000 border-primary text-primary rounded-l-full rounded-r-full flex items-center gap-2">Live link <FiArrowUpRight/></button>
-            <h2 className="text-primary border-2 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><FiGithub className="text-4xl p-2"/></h2>
+
+           <a href="https://github.com/Jamanul/grant-genius-client"><h2 className="text-primary border-2 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><FiGithub className="text-4xl p-2"/></h2></a> 
+         <a href="https://github.com/Jamanul/grant-genius-server"><h2 className="hover:text-primary border-2 rounded-full hover:border-primary bg-primary hover:bg-transparent text-text hover:transition hover:duration-1000"><FiGithub className="text-4xl p-2"/></h2></a>   
           </div>
         </div>
       </div>
@@ -77,9 +90,20 @@ const Projects = () => {
             Users can also buy the borrowed books by a safe payment.
             </li>
           </ul>
+          <div className="card-actions">
+            <p className=" items-center flex mr-1 gap-0 md:gap-4 ">Skills used: 
+            <h2 className="text-primary border-2 h-10 w-10 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><RiReactjsLine className="text-4xl p-2"/></h2>
+            <h2 className="text-primary border-2 h-10 w-10 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><RiFirebaseLine className="text-4xl p-2"/></h2>
+            <h2 className="text-primary border-2 h-10 w-10 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><RiJavascriptLine className="text-4xl p-2"/></h2>
+            <h2 className="text-primary border-2 h-10 w-10 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><RiTailwindCssLine className="text-4xl p-2"/></h2>
+            <h2 className="text-primary border-2 h-10 w-10 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><RiNodejsLine className="text-4xl p-2"/></h2>
+
+            </p>
+          </div>
           <div className="card-actions items-center justify-end">
           <button className="px-9 py-2 border-2 hover:bg-primary hover:text-text hover:transition hover:duration-1000 border-primary text-primary rounded-l-full rounded-r-full flex items-center gap-2">Live link <FiArrowUpRight/></button>
-            <h2 className="text-primary border-2 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><FiGithub className="text-4xl p-2"/></h2>
+           <a href="https://github.com/Jamanul/knowledge-hub-client"> <h2 className="text-primary border-2 rounded-full border-primary hover:bg-primary hover:border-2 hover:text-text hover:transition hover:duration-1000"><FiGithub className="text-4xl p-2"/></h2></a>
+           <a href="https://github.com/Jamanul/knowledge-hub-server"><h2 className="hover:text-primary border-2 rounded-full hover:border-primary bg-primary hover:bg-transparent text-text hover:transition hover:duration-1000"><FiGithub className="text-4xl p-2"/></h2></a>  
           </div>
         </div>
       </div>
@@ -105,9 +129,20 @@ const Projects = () => {
             By creating a user account, artists can save their artwork, manage their collections.
             </li>
           </ul>
+          <div className="card-actions">
+            <p className=" items-center flex mr-1 gap-0 md:gap-4 ">Skills used: 
+            <h2 className="text-primary border-2 h-10 w-10 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><RiReactjsLine className="text-4xl p-2"/></h2>
+            <h2 className="text-primary border-2 h-10 w-10 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><RiFirebaseLine className="text-4xl p-2"/></h2>
+            <h2 className="text-primary border-2 h-10 w-10 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><RiJavascriptLine className="text-4xl p-2"/></h2>
+            <h2 className="text-primary border-2 h-10 w-10 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><RiTailwindCssLine className="text-4xl p-2"/></h2>
+            <h2 className="text-primary border-2 h-10 w-10 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><RiNodejsLine className="text-4xl p-2"/></h2>
+
+            </p>
+          </div>
           <div className="card-actions items-center justify-end">
           <button className="px-9 py-2 border-2 hover:bg-primary hover:text-text hover:transition hover:duration-1000 border-primary text-primary rounded-l-full rounded-r-full flex items-center gap-2">Live link <FiArrowUpRight/></button>
-            <h2 className="text-primary border-2 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><FiGithub className="text-4xl p-2"/></h2>
+           <a href="https://github.com/Jamanul/crafty-canvas-client"><h2 className="text-primary border-2 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><FiGithub className="text-4xl p-2"/></h2></a> 
+          <a href="https://github.com/Jamanul/crafty-canvas-server"> <h2 className="hover:text-primary border-2 rounded-full hover:border-primary bg-primary hover:bg-transparent text-text hover:transition hover:duration-1000"><FiGithub className="text-4xl p-2"/></h2></a> 
           </div>
         </div>
       </div>
