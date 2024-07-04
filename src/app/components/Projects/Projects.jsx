@@ -11,7 +11,7 @@ const Projects = () => {
           My Best Works
         </h2>
         <h2 className="text-2xl text-text mb-10">
-          Here's A little glimpse of my work over the year.
+          Here is A little glimpse of my work over the year.
         </h2>
       </div>
       <div className="card bg-[#140C1C] lg:card-side mb-6  border-primary rounded-3xl border-2 p-2 shadow-xl">

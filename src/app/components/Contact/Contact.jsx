@@ -42,7 +42,7 @@ const Contact = () => {
     <div className="flex flex-col md:flex-row gap-6">
       <div className="bg-[#140C1C] px-4 py-10 rounded-3xl mt-20 md:mt-40 md:w-1/2">
         <h2 className="text-5xl mb-4 font-bold text-primary bg-gradient-to-r from-primary to-slate-400 text-transparent inline-block bg-clip-text">
-          Let's work together.
+          Lets work together.
         </h2>
         <p className="text-xl">
           I design and code beautifully simple things and i love what i do. Just

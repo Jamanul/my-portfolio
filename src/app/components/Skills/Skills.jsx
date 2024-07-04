@@ -9,7 +9,7 @@ const Skills = () => {
           My Skills
         </h2>
         <h2 className="text-2xl text-text mb-10">
-          Here's the skill I have acquired over the year to build dynamic and user-friendly website.
+          Here is the skill I have acquired over the year to build dynamic and user-friendly website.
         </h2>
       </div>
       <div className='grid grid-cols-2 md:grid-cols-6'>
