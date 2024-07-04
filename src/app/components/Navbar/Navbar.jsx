@@ -116,7 +116,7 @@ const Navbar = () => {
             </li>
             
           </ul>
-          <div><button className="ml-10 bg-primary px-9 py-4 rounded-l-full rounded-r-full bg-gradient-to-r from-primary to-black hover:transition hover:bg-gradient-to-r hover:from-black hover:to-primary hover:ease-in-out hover:duration-[1000ms] ">Hire me</button></div>
+          <div><div className="ml-10 hover:transition bg-primary px-9 py-4 rounded-l-full rounded-r-full bg-gradient-to-r from-primary to-black hover:bg-gradient-to-r hover:from-black hover:to-primary hover:duration-1000 hover:ease-in-out">Hire me</div></div>
         </div>
       </nav>
     </div>

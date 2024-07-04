@@ -37,6 +37,24 @@ const AboutMe = () => {
         <img src="https://i.postimg.cc/sX3dqyPM/ccc406dbafc09f3ac2f066a494af21e7.jpg" className="border-primary border-2 ml-16 translate-x-5 translate-y-10 transform rotate-12 hover:rotate-0 hover:transition hover:duration-1000 hover:border-violet-300 mt-32 rounded-3xl h-[400px] w-[400px]" alt="" />
       </div>
     </div>
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20">
+        <div className="flex items-center gap-1">
+            <h2 className="text-7xl"><CountUp end={1} /></h2>
+            <h2 className="text-2xl">Years of <br /> experience</h2>
+        </div>
+        <div className="flex items-center">
+            <h2 className="text-7xl"><CountUp end={20} />+</h2>
+            <h2 className="text-2xl">Project <br /> completed</h2>
+        </div>
+        <div className="flex items-center gap-1">
+            <h2 className="text-7xl"><CountUp end={8} /></h2>
+            <h2 className="text-2xl">Technology <br /> mastered</h2>
+        </div>
+        <div className="flex items-center">
+            <h2 className="text-7xl"><CountUp end={500} />+</h2>
+            <h2 className="text-2xl">Github <br /> contributions</h2>
+        </div>
+    </div>
     </div>
   );
 };
