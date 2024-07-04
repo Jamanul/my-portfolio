@@ -4,6 +4,7 @@ import { FiDownload, FiGithub, FiInstagram } from "react-icons/fi";
 import { RiFacebookLine } from "react-icons/ri";
 import { TiSocialLinkedin } from "react-icons/ti";
 import CountUp from 'react-countup';
+import Image from "next/image";
 const AboutMe = () => {
   return (
     <div>
@@ -34,7 +35,7 @@ const AboutMe = () => {
         </div>
       </div>
       <div>
-        <img src="./me.jpg" className="border-primary border-2 md:ml-16 md:translate-x-5 md:translate-y-10 transform rotate-12 hover:rotate-0 hover:transition hover:duration-1000 hover:border-violet-300 mt-12 md:mt-32 rounded-3xl h-[400px] w-[400px]" alt="" />
+        <Image src="./me.jpg" className="border-primary border-2 md:ml-16 md:translate-x-5 md:translate-y-10 transform rotate-12 hover:rotate-0 hover:transition hover:duration-1000 hover:border-violet-300 mt-12 md:mt-32 rounded-3xl h-[400px] w-[400px]" alt="" />
       </div>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-6 mt-20">
