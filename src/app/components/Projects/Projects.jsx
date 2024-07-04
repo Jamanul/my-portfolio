@@ -16,7 +16,7 @@ const Projects = () => {
       </div>
       <div className="card bg-[#140C1C] lg:card-side mb-6  border-primary rounded-3xl border-2 p-2 shadow-xl">
         <figure>
-          <Image className="w-[500px]" src="/public/grant.PNG" alt="Album" />
+          <Image className="w-[500px]" src="/grant.PNG" alt="Album" />
         </figure>
         <div className="card-body md:w-2/3">
           <h2 className="card-title">Grant Genius</h2>
