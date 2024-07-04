@@ -16,7 +16,7 @@ const Projects = () => {
       </div>
       <div className="card bg-[#140C1C] lg:card-side mb-6  border-primary rounded-3xl border-2 p-2 shadow-xl">
         <figure>
-          <Image className="w-[500px]" src="../../../../public/grant.PNG" alt="Album" />
+          <Image className="w-[500px]" src="/public/grant.PNG" alt="Album" />
         </figure>
         <div className="card-body md:w-2/3">
           <h2 className="card-title">Grant Genius</h2>
@@ -71,7 +71,7 @@ const Projects = () => {
       </div>
       <div className="card lg:card-side mb-6 bg-[#140C1C] border-primary rounded-3xl border-2 p-2 shadow-xl">
         <figure>
-          <Image className="w-[500px]" src="../../../../public/knowledge-hub.PNG" alt="Album" />
+          <Image className="w-[500px]" src="/knowledge-hub.PNG" alt="Album" />
         </figure>
         <div className="card-body md:w-2/3">
           <h2 className="card-title">Knowledge Hub</h2>
@@ -110,7 +110,7 @@ const Projects = () => {
       </div>
       <div className="card lg:card-side bg-[#140C1C] border-primary rounded-3xl border-2 p-2 shadow-xl">
         <figure>
-          <Image className="w-[500px]" src="../../../../public/crafty.PNG" alt="Album" />
+          <Image className="w-[500px]" src="/crafty.PNG" alt="Album" />
         </figure>
         <div className="card-body md:w-2/3">
           <h2 className="card-title">Crafty Canvas</h2>

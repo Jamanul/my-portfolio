@@ -25,7 +25,7 @@ const AboutMe = () => {
           performance.
         </h6>
         <div className="mt-10 flex gap-1 md:gap-6 items-center">
-           <a href="../../../../public/Orginal resume.pdf" download={'resume'}><button className="px-9 py-2 md:py-4 border-2 hover:bg-primary hover:text-text hover:transition hover:duration-1000 border-primary text-primary rounded-l-full rounded-r-full flex items-center gap-2">Download Resume <FiDownload/></button></a> 
+           <a href="/Orginal resume.pdf" download={'resume'}><button className="px-9 py-2 md:py-4 border-2 hover:bg-primary hover:text-text hover:transition hover:duration-1000 border-primary text-primary rounded-l-full rounded-r-full flex items-center gap-2">Download Resume <FiDownload/></button></a> 
            <div className="space-x-1 flex items-center gap-2">
                <a href="https://www.facebook.com/profile.php?id=100009156974257"><h2 className="text-primary border-2 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><RiFacebookLine className="text-4xl p-2"/></h2></a> 
               <a href="https://www.linkedin.com/in/md-jamanul-karim/"><h2 className="text-primary border-2 rounded-full border-primary hover:bg-primary hover:text-text hover:transition hover:duration-1000"><TiSocialLinkedin className="text-4xl p-2"/></h2></a>  
