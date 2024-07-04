@@ -12,7 +12,7 @@ const Projects = () => {
           Here's A little glimpse of my work over the year.
         </h2>
       </div>
-      <div className="card lg:card-side mb-6 bg-black border-primary rounded-3xl border-2 p-2 shadow-xl">
+      <div className="card bg-[#140C1C] lg:card-side mb-6  border-primary rounded-3xl border-2 p-2 shadow-xl">
         <figure>
           <img className="w-[500px]" src="./grant.PNG" alt="Album" />
         </figure>
@@ -55,7 +55,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="card lg:card-side mb-6 bg-black border-primary rounded-3xl border-2 p-2 shadow-xl">
+      <div className="card lg:card-side mb-6 bg-[#140C1C] border-primary rounded-3xl border-2 p-2 shadow-xl">
         <figure>
           <img className="w-[500px]" src="./knowledge-hub.PNG" alt="Album" />
         </figure>
@@ -83,7 +83,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="card lg:card-side bg-black border-primary rounded-3xl border-2 p-2 shadow-xl">
+      <div className="card lg:card-side bg-[#140C1C] border-primary rounded-3xl border-2 p-2 shadow-xl">
         <figure>
           <img className="w-[500px]" src="./crafty.PNG" alt="Album" />
         </figure>
