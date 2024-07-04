@@ -12,7 +12,23 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily:{
+        'mont':['"Montserrat", sans-serif'],
+        'poppins':['"Poppins", sans-serif'],
+        'sora':['"Sora", sans-serif'],
+      },
+      colors:{
+        
+        'primary':'#8750F7',
+        'text':'#DDDDDD',
+        
+
+
+      }
     },
+    
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 };
