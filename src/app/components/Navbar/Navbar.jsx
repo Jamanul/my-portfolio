@@ -15,6 +15,7 @@ const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   const handleToggle = () => {
     setActive(!isActive);
+    console.log(isActive)
   };
   // useEffect is used to perform side effects in functional components.
   // Here, it's used to register scroll events and update scrollSpy when the component mounts.
@@ -94,7 +95,7 @@ const Navbar = () => {
                 Projects
               </Link>
             </li>
-            <li className="hover:text-primary hover:transform hover:duration-1000 hover:ease-in-out hover:transition">
+            
               <Link
                 activeClass="active"
                 to="education"
@@ -104,9 +105,10 @@ const Navbar = () => {
                 duration={500}
                 onSetActive={handleSetActive}
               >
-                Education
+                <li className="hover:text-primary hover:transform hover:duration-1000 hover:ease-in-out hover:transition">Education</li>
+                
               </Link>
-            </li>
+            
             <li className="hover:text-primary hover:transform hover:duration-1000 hover:ease-in-out hover:transition">
               <Link
                 activeClass="active"
@@ -129,7 +131,7 @@ const Navbar = () => {
         </div>
       </nav>
       <nav className="flex md:hidden justify-between items-center text-text font-sora">
-        <div>
+        <div className="sticky top-0">
           <p className="text-4xl md:pt-6">JK</p>
         </div>
         <div className="flex justify-center items-center">
@@ -152,9 +154,9 @@ const Navbar = () => {
                 toggle={setOpen}
               />
             </div>
-            {isActive && (
-              <ul className="flex gap-8 menu dropdown-content z-[99999] mt-3 p-2 shadow w-screen bg-[#140C1C] text-text -left-[296px] text-[17px] top-[40px]">
-                <li className="hover:text-primary hover:transform hover:duration-1000 hover:ease-in-out hover:transition">
+              
+              <ul className={`${isActive? 'overflow-x-hidden flex translate-x-0 transition duration-1000 ease-in' : 'translate-x-96 overflow-x-hidden hidden '} flex gap-8 menu dropdown-content z-[99999] mt-3 p-2 shadow w-screen bg-[#140C1C] text-text -left-[296px] text-[17px] top-[40px]`}>
+               
                   <Link
                     activeClass="active"
                     to="skills"
@@ -163,11 +165,13 @@ const Navbar = () => {
                     offset={50}
                     duration={500}
                     onSetActive={handleSetActive}
+                    href="#"
                   >
-                    Skills
+                     <li className="hover:text-primary hover:transform hover:duration-1000 hover:ease-in-out hover:transition">Skills</li>
+                    
                   </Link>
-                </li>
-                <li className="text- hover:text-primary hover:transform hover:duration-1000 hover:ease-in-out hover:transition">
+              
+               
                   <Link
                     activeClass="active"
                     to="projects"
@@ -176,11 +180,13 @@ const Navbar = () => {
                     offset={50}
                     duration={500}
                     onSetActive={handleSetActive}
+                    href="#1"
                   >
-                    Projects
+                     <li className="text- hover:text-primary hover:transform hover:duration-1000 hover:ease-in-out hover:transition">Projects</li>
+                    
                   </Link>
-                </li>
-                <li className="hover:text-primary hover:transform hover:duration-1000 hover:ease-in-out hover:transition">
+                
+               
                   <Link
                     activeClass="active"
                     to="education"
@@ -189,11 +195,13 @@ const Navbar = () => {
                     offset={50}
                     duration={500}
                     onSetActive={handleSetActive}
+                    href="#2"
                   >
-                    Education
+                     <li className="hover:text-primary hover:transform hover:duration-1000 hover:ease-in-out hover:transition">    Education</li>
+                
                   </Link>
-                </li>
-                <li className="hover:text-primary hover:transform hover:duration-1000 hover:ease-in-out hover:transition">
+                
+                
                   <Link
                     activeClass="active"
                     to="contact"
@@ -202,12 +210,14 @@ const Navbar = () => {
                     offset={50}
                     duration={500}
                     onSetActive={handleSetActive}
+                    href="#3"
                   >
-                    Contact
+                    <li className="hover:text-primary hover:transform hover:duration-1000 hover:ease-in-out hover:transition">Contact</li>
+                    
                   </Link>
-                </li>
+                
               </ul>
-            )}
+            
           </div>
         </div>
       </nav>

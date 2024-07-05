@@ -13,7 +13,7 @@ const AboutMe = () => {
         <h2 className="text-3xl md:text-4xl mt-16 md:mt-32 mb-6 font-semibold text-text font-sora">
           I am Md Jamanul Karim
         </h2>
-        <h2 className="text-5xl md:text-6xl font-bold text-primary bg-gradient-to-r from-primary to-slate-400 text-transparent inline-block bg-clip-text">
+        <h2 className="text-5xl md:text-6xl bg-clip-text font-bold text-primary bg-gradient-to-r from-primary to-slate-400 text-transparent inline-block ">
           Mern Stack Developer
         </h2>
         <h6 className="md:text-2xl mt-6">
@@ -35,7 +35,7 @@ const AboutMe = () => {
         </div>
       </div>
       <div>
-        <Image src="/me.jpg" className="border-primary border-2 md:ml-16 md:translate-x-5 md:translate-y-10 transform rotate-12 hover:rotate-0 hover:transition hover:duration-1000 hover:border-violet-300 mt-12 md:mt-32 rounded-3xl h-[400px] w-[400px]" alt="" />
+        <Image src="/me.jpg" width={400} height={400} className="border-primary border-2 md:ml-16 md:translate-x-5 md:translate-y-10 transform rotate-12 hover:rotate-0 hover:transition hover:duration-1000 hover:border-violet-300 mt-12 md:mt-32 rounded-3xl h-[400px] w-[400px]" alt="" />
       </div>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-6 mt-20">

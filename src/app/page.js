@@ -10,16 +10,16 @@ export default function Home() {
   return (
     <div className="max-w-7xl mx-auto overflow-x-hidden">
       <AboutMe />
-      <Element name="skills" className="element">
-      <Skills />
+      <Element id="#" name="skills" className="element">
+      <Skills  />
       </Element>
-      <Element name="projects" className="element">
+      <Element id="#1" name="projects" className="element">
         <Projects />
       </Element>
-      <Element name="education" className="element">
+      <Element id="#2" name="education" className="element">
         <Education />
       </Element>
-      <Element name="contact" className="element">
+      <Element id="#3" name="contact" className="element">
            <Contact />
       </Element>
 
